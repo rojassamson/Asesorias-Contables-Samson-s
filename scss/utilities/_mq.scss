@@ -1,0 +1,68 @@
+@media (max-width: 992px) {
+    header{
+        height: 250px;
+    }
+
+    nav div ul {
+        height: 75% !important;
+    }
+
+    .padding-imagen {
+        padding: 30px 0;
+    }
+
+    li a {
+        display: inline-block;
+    }
+
+    .borde_abajo {
+        border-right: none !important;
+        border-bottom: 1px solid black !important;
+        padding: 20px 0;
+    }
+
+    .padding-planes {
+        padding: 20px 0;
+    }
+
+}
+
+@media (max-width: 553px) {
+    header{
+        height: 350px;
+    }
+    .navbar-grid {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "blog sobre_mi"
+                            "planes contacto";
+        li:nth-of-type(1) {
+            grid-area: blog;
+        }
+        li:nth-of-type(2) {
+            grid-area: sobre_mi;
+        }   
+        li:nth-of-type(3) {
+            grid-area: planes;
+        }
+        li:nth-of-type(4) {
+            grid-area: contacto;
+        }
+        padding:30px 0 0 0 !important;
+    }   
+}
+@media (max-width: 1200px) {
+    .altura_main_planes {
+        height: auto;
+        padding-bottom: 5vh !important;
+    }    
+}
+
+// @media (max-width: 335px) {
+//     .navbar-grid {
+//         display: grid;
+//         grid-template-columns: 1fr 1fr;
+//         grid-template-rows: 1fr 1fr;
+//     }
+// }

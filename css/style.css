@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+h1, h2, h3, p, a, li {
+  font-family: 'Montserrat', sans-serif; }
+
+h1 {
+  font-size: 2.6rem !important;
+  font-weight: normal; }
+
+h2 {
+  font-size: 1.8rem !important;
+  font-weight: normal; }
+
+h3 {
+  font-size: 1.6rem !important;
+  font-weight: normal; }
+
+p {
+  font-size: 1.2rem !important;
+  font-weight: 300; }
+
+a {
+  font-size: 1rem !important;
+  font-weight: 300; }
+
+a {
+  text-decoration: none;
+  color: white;
+  border-radius: 50px;
+  transition: background-color 0.3s ease-out , padding 0.3s ease-out, font-size 0.35s ease-out, color 0.35s ease-out;
+  -webkit-transition: background-color 0.35s ease-out, padding 0.3s ease-out, font-size 0.35s ease-out, color 0.35s ease-out;
+  -moz-transition: background-color 0.35s ease-out,padding 0.3s ease-out, font-size 0.35s ease-out, color 0.35s ease-out;
+  -o-transition: background-color 0.35s ease-out, padding 0.3s ease-out, color 0.35s ease-out; }
+
+a:hover {
+  background: white;
+  padding: 10px 10px;
+  color: red !important; }
+
+.centrar-vertical {
+  margin: auto 0; }
+
+.btn-dark {
+  --bs-btn-color: #fff !important;
+  --bs-btn-bg: black !important;
+  --bs-btn-border-color: black !important;
+  --bs-btn-hover-color: #fff !important;
+  --bs-btn-hover-bg: white !important;
+  --bs-btn-hover-border-color: white !important;
+  --bs-btn-focus-shadow-rgb: 66,70,73 !important;
+  --bs-btn-active-color: #fff !important;
+  --bs-btn-active-bg: white !important;
+  --bs-btn-active-border-color: white !important;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: black !important;
+  --bs-btn-disabled-bg: black !important;
+  --bs-btn-disabled-border-color: black !important; }
+
+@media (max-width: 992px) {
+  header {
+    height: 250px; }
+  nav div ul {
+    height: 75% !important; }
+  .padding-imagen {
+    padding: 30px 0; }
+  li a {
+    display: inline-block; }
+  .borde_abajo {
+    border-right: none !important;
+    border-bottom: 1px solid black !important;
+    padding: 20px 0; }
+  .padding-planes {
+    padding: 20px 0; } }
+
+@media (max-width: 553px) {
+  header {
+    height: 350px; }
+  .navbar-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "blog sobre_mi" "planes contacto";
+    padding: 30px 0 0 0 !important; }
+    .navbar-grid li:nth-of-type(1) {
+      grid-area: blog; }
+    .navbar-grid li:nth-of-type(2) {
+      grid-area: sobre_mi; }
+    .navbar-grid li:nth-of-type(3) {
+      grid-area: planes; }
+    .navbar-grid li:nth-of-type(4) {
+      grid-area: contacto; } }
+
+@media (max-width: 1200px) {
+  .altura_main_planes {
+    height: auto;
+    padding-bottom: 5vh !important; } }
+
+footer div p {
+  color: white; }
+
+.padding-footer {
+  padding: 0 50%; }
+
+footer a:hover {
+  background: black; }
+
+span {
+  font-weight: 700;
+  font-style: normal;
+  border-bottom: 4px solid white; }
+
+.padding-navbar {
+  padding: 15px 0; }
+
+h1 a:hover {
+  font-size: normal; }
+
+main {
+  background: #020024;
+  background: radial-gradient(circle, #020024 0%, rgba(44, 64, 63, 0.206497) 0%, rgba(44, 69, 67, 0.816705) 100%); }
+
+#altura_main_planes {
+  height: 75vh;
+  padding-top: 15vh !important; }

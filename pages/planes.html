@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,700;1,100;1,300;1,700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Rojas Samson - Contador</title>
 </head>
 <body>
@@ -18,7 +18,7 @@
                 <div class="text-lg-start text-center col-lg-8" >
                     <a class="d-inline-block" href="../index.html"><h1 class="fst-italic">Rojas Samson <span>Contador</span></h1></a>   
                 </div>
-                <ul class="padding-navbar list-unstyled col-lg-4 d-flex flex-column flex-lg-row  text-center text-lg-end justify-content-between my-auto">
+                <ul class="navbar-grid padding-navbar list-unstyled col-lg-4 d-flex flex-column flex-lg-row  text-center text-lg-end justify-content-between my-auto">
                     <li><a href="./blog.html">Blog</a></li>
                     <li><a href="./sobre_mi.html">Sobre Mi</a></li>
                     <li><a href="./planes.html">Planes</a></li>
@@ -29,11 +29,11 @@
         </nav> 
     </header>
 
-    <main class="altura_main_planes">
+    <main id="altura_main_planes">
         <div class="alinear_vertical container">
-          <div class="row">
-            <div class="col-lg-4">
-              <section class="border-end borde_abajo padding-planes px-2 border-black">
+          <div class="contenedor-planes">
+            <div class="gradient-box">
+              <section class="borde_abajo padding-planes px-2">
                 <h2 class="text-center">Plan Básico</h2>
                 <p class="text-center">Costo: 1,7 UF + IVA Mensual</p>
                 <ul class="text-center">
@@ -48,10 +48,13 @@
                   <li>Remuneraciones para 2 trabajadores</li>
                   <li>0,3 UF por cada trabajador adicional</li>
                 </ul>
+                  <div id="boton-plan-basico" class="text-center">
+                    <a href="../pages/contacto.html" class="btn btn-dark">CONSULTAR PLAN BÁSICO</a>
+                  </div>
               </section>
             </div>
-            <div class="col-lg-4">
-              <section class="border-end borde_abajo padding-planes px-2 border-black">
+            <div class="gradient-box">
+              <section class="borde_abajo padding-planes px-2">
                 <h2 class="text-center">Plan Medio</h2>
                 <p class="text-center">Costo: 3 UF + IVA Mensual</p>
                 <ul class="text-center">
@@ -66,9 +69,12 @@
                   <li>Remuneraciones para 5 trabajadores</li>
                   <li>0,3 UF por cada trabajador adicional</li>
                 </ul>
+                  <div id="boton-plan-medio" class="text-center">
+                    <a href="../pages/contacto.html" class="btn btn-dark">CONSULTAR PLAN MEDIO</a>
+                  </div>
               </section>
             </div>
-            <div class="col-lg-4">
+            <div class="gradient-box">
               <section class="px-2 padding-planes">
                 <h2 class="text-center">Plan Full</h2>
                 <p class="text-center">Costo: 8 UF + IVA Mensual</p>
@@ -85,11 +91,12 @@
                   <li>Remuneraciones para 10 trabajadores</li>
                   <li>0,3 UF por cada trabajador adicional</li>
                 </ul>
+                  <div id="boton-plan-full" class="text-center">
+                    <a href="../pages/contacto.html" class="btn btn-dark">CONSULTAR PLAN FULL</a>
+                  </div>
+                
               </section>
             </div>
-          </div>
-          <div class="text-center">
-            <a href="../pages/contacto.html" class="btn btn-dark">IR AL FORMULARIO DE CONTACTO</a>
           </div>
         </div>
       </main>

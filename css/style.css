@@ -26,22 +26,94 @@ a {
   font-size: 1rem !important;
   font-weight: 300; }
 
+.centrar-vertical {
+  margin: auto 0; }
+
+.container {
+  position: relative; }
+
 a {
   text-decoration: none;
   color: white;
-  border-radius: 50px;
-  transition: background-color 0.3s ease-out , padding 0.3s ease-out, font-size 0.35s ease-out, color 0.35s ease-out;
-  -webkit-transition: background-color 0.35s ease-out, padding 0.3s ease-out, font-size 0.35s ease-out, color 0.35s ease-out;
-  -moz-transition: background-color 0.35s ease-out,padding 0.3s ease-out, font-size 0.35s ease-out, color 0.35s ease-out;
-  -o-transition: background-color 0.35s ease-out, padding 0.3s ease-out, color 0.35s ease-out; }
-
-a:hover {
-  background: white;
   padding: 10px 10px;
-  color: red !important; }
+  display: inline-block;
+  border-radius: 50px;
+  -moz-transition: all 0.35s ease-out;
+  -o-transition: all 0.35s ease-out;
+  transition: all 0.35s ease-out; }
+  a:hover {
+    background: white;
+    transform: scale(1.2);
+    color: red !important; }
+    a:hover span {
+      border-color: red; }
 
-.centrar-vertical {
-  margin: auto 0; }
+.gradient-box {
+  border-radius: 10%;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0) 0%, rgba(129, 111, 111, 0.69) 35%, rgba(0, 0, 0, 0) 65%, rgba(143, 123, 123, 0.694) 100%);
+  animation: color-gradient-animation 2s infinite;
+  background-size: 400% 400%; }
+  .gradient-box:hover {
+    background: linear-gradient(45deg, rgba(125, 231, 78, 0.779582) 0%, rgba(9, 244, 190, 0.75174) 25%, rgba(78, 231, 177, 0.779582) 50%, rgba(9, 147, 244, 0.75174) 100%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    animation: color-gradient-animation 2s ease-out infinite;
+    background-size: 400% 400%;
+    background-repeat: repeat; }
+
+.gradient-box--blog {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 1%;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0) 0%, rgba(129, 111, 111, 0.69) 35%, rgba(0, 0, 0, 0) 65%, rgba(143, 123, 123, 0.694) 100%);
+  animation: color-gradient-animation 2s infinite;
+  background-size: 400% 400%; }
+  .gradient-box--blog:hover {
+    background: linear-gradient(45deg, rgba(125, 231, 78, 0.779582) 0%, rgba(9, 244, 190, 0.75174) 25%, rgba(78, 231, 177, 0.779582) 50%, rgba(9, 147, 244, 0.75174) 100%);
+    animation: color-gradient-animation 2s ease-out infinite;
+    background-size: 400% 400%;
+    background-repeat: repeat; }
+
+@keyframes color-gradient-animation {
+  0% {
+    background-position: 0 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0 50%; } }
+
+.contenedor-cards {
+  height: 27vh;
+  width: 100%;
+  position: relative;
+  perspective: 500pxpx; }
+  .contenedor-cards__front, .contenedor-cards__back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    backface-visibility: hidden; }
+  .contenedor-cards__front {
+    display: flex;
+    flex-direction: column; }
+    .contenedor-cards__front__img {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 70%;
+      padding-top: 20px; }
+      .contenedor-cards__front__img img {
+        height: 100%; }
+    .contenedor-cards__front__heading {
+      padding: 30px 0;
+      width: 100%;
+      height: 30%; }
+  .contenedor-cards__back {
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center; }
+  .contenedor-cards:hover .contenedor-cards__front {
+    transform: rotateY(180deg); }
+  .contenedor-cards:hover .contenedor-cards__back {
+    transform: rotateY(360deg); }
 
 .btn-dark {
   --bs-btn-color: #fff !important;
@@ -59,9 +131,25 @@ a:hover {
   --bs-btn-disabled-bg: black !important;
   --bs-btn-disabled-border-color: black !important; }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
+  .contenedor-cards {
+    height: 50vh; }
+  .navbar-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "blog sobre_mi" "planes contacto";
+    padding: 30px 0 0 0 !important; }
+    .navbar-grid li:nth-of-type(1) {
+      grid-area: blog; }
+    .navbar-grid li:nth-of-type(2) {
+      grid-area: sobre_mi; }
+    .navbar-grid li:nth-of-type(3) {
+      grid-area: planes; }
+    .navbar-grid li:nth-of-type(4) {
+      grid-area: contacto; }
   header {
-    height: 250px; }
+    height: auto; }
   nav div ul {
     height: 75% !important; }
   .padding-imagen {
@@ -74,24 +162,6 @@ a:hover {
     padding: 20px 0; }
   .padding-planes {
     padding: 20px 0; } }
-
-@media (max-width: 553px) {
-  header {
-    height: 350px; }
-  .navbar-grid {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "blog sobre_mi" "planes contacto";
-    padding: 30px 0 0 0 !important; }
-    .navbar-grid li:nth-of-type(1) {
-      grid-area: blog; }
-    .navbar-grid li:nth-of-type(2) {
-      grid-area: sobre_mi; }
-    .navbar-grid li:nth-of-type(3) {
-      grid-area: planes; }
-    .navbar-grid li:nth-of-type(4) {
-      grid-area: contacto; } }
 
 @media (max-width: 1200px) {
   .altura_main_planes {
@@ -115,13 +185,20 @@ span {
 .padding-navbar {
   padding: 15px 0; }
 
-h1 a:hover {
-  font-size: normal; }
-
 main {
   background: #020024;
   background: radial-gradient(circle, #020024 0%, rgba(44, 64, 63, 0.206497) 0%, rgba(44, 69, 67, 0.816705) 100%); }
 
 #altura_main_planes {
-  height: 75vh;
-  padding-top: 15vh !important; }
+  height: 70.85vh;
+  padding-top: 10vh !important; }
+
+.contenedor-planes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+  margin-bottom: 2rem; }
+  .contenedor-planes #boton-plan-basico, .contenedor-planes #boton-plan-medio {
+    padding: 75px 0 0 0; }
+  .contenedor-planes #boton-plan-full {
+    padding: 25px 0 20px 0; }

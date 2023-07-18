@@ -1,4 +1,21 @@
 #altura_main_planes {
-    height: 75vh;
-    padding-top: 15vh !important;
+    height: 70.85vh;
+    padding-top: 10vh !important;
+
+}
+
+.contenedor-planes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    margin-bottom: 2rem;
+
+    #boton-plan-basico, #boton-plan-medio {
+        padding: 75px 0 0 0;
+    }
+
+    #boton-plan-full {
+        padding: 25px 0 20px 0;
+    }
+
 }

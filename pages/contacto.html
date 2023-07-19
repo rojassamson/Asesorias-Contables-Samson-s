@@ -29,31 +29,34 @@
         </nav> 
     </header>
 
-    <main>
+    <main id="main-contacto">
         <div class="container">
           <div class="row">
-            <div class="col-12 text-center py-5">
+            <div" class="col-12 text-center py-5">
               <div>
-                <img src="../assets/img/contacto.jpg" alt="imagen formulario" class="img-fluid rounded">
+                <img id="imagen-contacto" src="../assets/img/imagen-contacto.webp" alt="imagen formulario" class="img-fluid rounded">
               </div>
             </div>
-            <div class="py-3 col-12">
+            <div id="formulario" class="py-3 col-12">
               <form action="">
                     <div class="row">
                         <fieldset class="col-12 col-lg">
                           <legend>Datos personales</legend>
-                          <div class="mb-3">
-                            <label for="nombre" class="form-label">Nombre:</label>
-                            <input type="text" class="form-control" id="nombre">
+                          <div id="centrar-fieldset">
+                            <div class="mb-3">
+                              <label for="nombre" class="form-label">Nombre:</label>
+                              <input type="text" class="form-control" id="nombre">
+                            </div>
+                            <div class="mb-3">
+                              <label for="correo" class="form-label">Correo:</label>
+                              <input type="email" class="form-control" id="correo">
+                            </div>
+                            <div class="mb-3">
+                              <label for="telefono" class="form-label">Teléfono:</label>
+                              <input type="number" class="form-control" id="telefono">
+                            </div>                            
                           </div>
-                          <div class="mb-3">
-                            <label for="correo" class="form-label">Correo:</label>
-                            <input type="email" class="form-control" id="correo">
-                          </div>
-                          <div class="mb-3">
-                            <label for="telefono" class="form-label">Teléfono:</label>
-                            <input type="number" class="form-control" id="telefono">
-                          </div>
+
                         </fieldset>
                         <fieldset class="col-12 col-lg">
                           <legend>Mensaje</legend>
@@ -63,7 +66,7 @@
                         </fieldset>
                     </div>
                 <div class="text-center py-4">
-                  <a href="#" class="btn btn-dark">ENVIAR FORMULARIO</a>
+                  <a href="#" class="btn btn-light">ENVIAR FORMULARIO</a>
                 </div>
               </form>
             </div>

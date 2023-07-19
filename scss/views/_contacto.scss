@@ -1,0 +1,26 @@
+#main-contacto {
+    padding-bottom: 10px;
+}
+
+#centrar-fieldset {
+    margin-top: 160px;
+}
+
+#imagen-contacto {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+#formulario {
+    position: relative;
+    width: 80%;
+    margin: -200px auto 0 auto;
+    z-index: 2;
+    background-color: black;
+    border-radius: 2.5%;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    color: white;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+}

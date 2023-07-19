@@ -119,10 +119,14 @@
     #formulario  {
     margin-top: 0;
     }
+
+    .contenedor-cards {
+        height: 75vh;
+    }
 }
 
 @media (max-width: 400px) {
     .contenedor-cards {
-        height: 80vh;
+        height: 90vh;
     }
 }

@@ -5,9 +5,20 @@
     .contenedor-cards {
         height: 50vh;
 
+        &__front__img {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
         img {
-            width: 90%;
+            max-width: 90% !important;
+            height: 50%;
         };
+    }
+
+    .divisor-contenido {
+        height: auto;
     }
 
     #formulario {
@@ -107,5 +118,11 @@
 @media (max-width: 630px) {
     #formulario  {
     margin-top: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .contenedor-cards {
+        height: 80vh;
     }
 }

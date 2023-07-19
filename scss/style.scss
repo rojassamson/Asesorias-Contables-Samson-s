@@ -1,16 +1,11 @@
-@import "./utilities/variables",
-        "./globals/reset",
-        "./utilities/mixins",
-        "./utilities/control-flujo",
+@import "./globals/reset",
         "./utilities/utilities",
         "./utilities/bootstrap",
         "./layout/footer",
         "./layout/header",
         "./layout/main",
-        "./views/blog",
-        "./views/index",
+        "./layout/divisor-contenido",
         "./views/planes",
-        "./views/sobre_mi",
         "./views/contacto.scss",
         "./utilities/mq";
 

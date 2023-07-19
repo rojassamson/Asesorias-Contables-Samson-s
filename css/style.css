@@ -131,43 +131,6 @@ a {
   --bs-btn-disabled-bg: black !important;
   --bs-btn-disabled-border-color: black !important; }
 
-@media (max-width: 991px) {
-  .contenedor-cards {
-    height: 50vh; }
-  .navbar-grid {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "blog sobre_mi" "planes contacto";
-    padding: 30px 0 0 0 !important; }
-    .navbar-grid li:nth-of-type(1) {
-      grid-area: blog; }
-    .navbar-grid li:nth-of-type(2) {
-      grid-area: sobre_mi; }
-    .navbar-grid li:nth-of-type(3) {
-      grid-area: planes; }
-    .navbar-grid li:nth-of-type(4) {
-      grid-area: contacto; }
-  header {
-    height: auto; }
-  nav div ul {
-    height: 75% !important; }
-  .padding-imagen {
-    padding: 30px 0; }
-  li a {
-    display: inline-block; }
-  .borde_abajo {
-    border-right: none !important;
-    border-bottom: 1px solid black !important;
-    padding: 20px 0; }
-  .padding-planes {
-    padding: 20px 0; } }
-
-@media (max-width: 1200px) {
-  .altura_main_planes {
-    height: auto;
-    padding-bottom: 5vh !important; } }
-
 footer div p {
   color: white; }
 
@@ -202,3 +165,100 @@ main {
     padding: 75px 0 0 0; }
   .contenedor-planes #boton-plan-full {
     padding: 25px 0 20px 0; }
+
+#main-contacto {
+  padding-bottom: 10px; }
+
+#centrar-fieldset {
+  margin-top: 160px; }
+
+#imagen-contacto {
+  position: relative;
+  width: 100%;
+  z-index: 1; }
+
+#formulario {
+  position: relative;
+  width: 80%;
+  margin: -200px auto 0 auto;
+  z-index: 2;
+  background-color: black;
+  border-radius: 2.5%;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+  color: white;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5); }
+
+@media (max-width: 991px) {
+  .container {
+    width: 90%; }
+  .contenedor-cards {
+    height: 50vh; }
+    .contenedor-cards img {
+      width: 90%; }
+  #formulario {
+    margin-top: -150px; }
+  .navbar-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "blog sobre_mi" "planes contacto";
+    padding: 30px 0 0 0 !important; }
+    .navbar-grid li:nth-of-type(1) {
+      grid-area: blog;
+      text-align: end;
+      padding-right: 12.5%; }
+    .navbar-grid li:nth-of-type(2) {
+      grid-area: sobre_mi;
+      text-align: start;
+      padding-left: 12.5%; }
+    .navbar-grid li:nth-of-type(3) {
+      grid-area: planes;
+      text-align: end;
+      padding-right: 12.5%; }
+    .navbar-grid li:nth-of-type(4) {
+      grid-area: contacto;
+      text-align: start;
+      padding-left: 12.5%; }
+  header {
+    height: auto; }
+  nav div ul {
+    height: 75% !important; }
+  .padding-imagen {
+    padding: 30px 0; }
+  li a {
+    display: inline-block; }
+  .borde_abajo {
+    border-right: none !important;
+    border-bottom: 1px solid black !important;
+    padding: 20px 0; }
+  .padding-planes {
+    padding: 20px 0; } }
+
+@media (max-width: 1400px) {
+  #altura_main_planes {
+    height: auto;
+    padding-bottom: 5vh !important; }
+  .contenedor-planes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    width: 50%;
+    margin: 0 auto; } }
+  @media (max-width: 1400px) and (max-width: 991px) {
+    .contenedor-planes {
+      width: 85%; } }
+
+@media (max-width: 1400px) {
+    .contenedor-planes #boton-plan-basico, .contenedor-planes #boton-plan-medio {
+      padding: 25px 0 20px 0; }
+    .contenedor-planes .gradient-box {
+      border-radius: 5%; }
+      .contenedor-planes .gradient-box ul {
+        display: inline-block;
+        padding: 0 25%; } }
+
+@media (max-width: 630px) {
+  #formulario {
+    margin-top: 0; } }

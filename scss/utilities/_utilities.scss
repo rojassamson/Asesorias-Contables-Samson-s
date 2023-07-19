@@ -64,11 +64,18 @@ a {
     100%{background-position: 0 50%;}
 }
 
+@keyframes texto-palpitante {
+    0%{transform: scale(1)}
+    50%{transform: scale(1.05);}
+    100%{transform: scale(1);}    
+}
+
 .contenedor-cards {
     height: 27vh;
     width: 100%;
     position: relative;
     perspective: 500pxpx;
+    margin: 30px 0;
 
     &__front, &__back {
         position: absolute;
@@ -103,6 +110,7 @@ a {
         transform: rotateY(180deg);
         display: flex;
         align-items: center;
+        width: 90%;
     }
 
     &:hover &__front {

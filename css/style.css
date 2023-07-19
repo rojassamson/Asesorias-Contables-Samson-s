@@ -20,11 +20,16 @@ h3 {
 
 p {
   font-size: 1.2rem !important;
-  font-weight: 300; }
+  font-weight: 300;
+  text-align: justify; }
 
 a {
   font-size: 1rem !important;
   font-weight: 300; }
+
+li {
+  text-align: justify;
+  margin: 10px 0; }
 
 .centrar-vertical {
   margin: auto 0; }
@@ -80,11 +85,20 @@ a {
   100% {
     background-position: 0 50%; } }
 
+@keyframes texto-palpitante {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.05); }
+  100% {
+    transform: scale(1); } }
+
 .contenedor-cards {
   height: 27vh;
   width: 100%;
   position: relative;
-  perspective: 500pxpx; }
+  perspective: 500pxpx;
+  margin: 30px 0; }
   .contenedor-cards__front, .contenedor-cards__back {
     position: absolute;
     width: 100%;
@@ -109,7 +123,8 @@ a {
   .contenedor-cards__back {
     transform: rotateY(180deg);
     display: flex;
-    align-items: center; }
+    align-items: center;
+    width: 90%; }
   .contenedor-cards:hover .contenedor-cards__front {
     transform: rotateY(180deg); }
   .contenedor-cards:hover .contenedor-cards__back {
@@ -152,9 +167,23 @@ main {
   background: #020024;
   background: radial-gradient(circle, #020024 0%, rgba(44, 64, 63, 0.206497) 0%, rgba(44, 69, 67, 0.816705) 100%); }
 
+.divisor-contenido {
+  height: 15vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .divisor-contenido div {
+    display: flex;
+    justify-content: center;
+    animation: texto-palpitante 3s infinite ease-in-out; }
+    .divisor-contenido div p {
+      font-size: 2.6rem !important; }
+
 #altura_main_planes {
   height: 70.85vh;
-  padding-top: 10vh !important; }
+  padding-top: 2vh !important; }
 
 .contenedor-planes {
   display: grid;
@@ -194,8 +223,16 @@ main {
     width: 90%; }
   .contenedor-cards {
     height: 50vh; }
+    .contenedor-cards__front__img {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
     .contenedor-cards img {
-      width: 90%; }
+      max-width: 90% !important;
+      height: 50%; }
+  .divisor-contenido {
+    height: auto; }
   #formulario {
     margin-top: -150px; }
   .navbar-grid {
@@ -262,3 +299,7 @@ main {
 @media (max-width: 630px) {
   #formulario {
     margin-top: 0; } }
+
+@media (max-width: 400px) {
+  .contenedor-cards {
+    height: 80vh; } }

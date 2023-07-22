@@ -238,6 +238,9 @@ main {
     justify-content: center;
     align-items: center; }
 
+#centrar-formulario {
+  width: 100%; }
+
 #centrar-fieldset {
   margin-top: 160px; }
 

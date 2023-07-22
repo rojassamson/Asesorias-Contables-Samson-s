@@ -227,7 +227,7 @@ main {
 
 #main-contacto {
   padding-bottom: 10px;
-  background-image: url("/assets/img/contacto.jpg");
+  background-image: url("../../assets/img/imagen-contacto.webp");
   height: 80vh;
   width: 100%;
   background-size: cover;

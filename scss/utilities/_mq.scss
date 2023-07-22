@@ -1,9 +1,52 @@
+@media (max-width: 1400px) {
+    #altura_main_planes {
+        height: auto;
+        padding-bottom: 5vh !important;
+    } 
+    .contenedor-planes {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+        width: 50%;
+        margin: 0 auto;
+
+        @media (max-width: 991px){
+            & {
+                width: 85%;
+            }
+        }
+
+        #boton-plan-basico, #boton-plan-medio {
+            padding: 25px 0 20px 0;
+        }
+
+        .gradient-box {
+            border-radius: 5%;
+            ul {
+                display: inline-block;
+                padding: 0 25%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .navbar ul {
+        margin-left: 15% !important;
+    }
+}
+
 @media (max-width: 991px) {
+
+    .navbar ul {
+        margin-left: 0 !important;
+    }
     .container {
         width: 90%;
     }
     .contenedor-cards {
-        height: 50vh;
+        min-height: 50vh;
 
         &__front__img {
             display: flex;
@@ -23,6 +66,10 @@
 
     #formulario {
         margin-top: -150px;
+    }
+
+    #gap-fieldset {
+        padding-top: 20px;
     }
 
     .navbar-grid {
@@ -82,39 +129,6 @@
 
 }
 
-@media (max-width: 1400px) {
-    #altura_main_planes {
-        height: auto;
-        padding-bottom: 5vh !important;
-    } 
-    .contenedor-planes {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 30px;
-        width: 50%;
-        margin: 0 auto;
-
-        @media (max-width: 991px){
-            & {
-                width: 85%;
-            }
-        }
-
-        #boton-plan-basico, #boton-plan-medio {
-            padding: 25px 0 20px 0;
-        }
-
-        .gradient-box {
-            border-radius: 5%;
-            ul {
-                display: inline-block;
-                padding: 0 25%;
-            }
-        }
-    }
-}
-
 @media (max-width: 630px) {
     #formulario  {
     margin-top: 0;
@@ -123,10 +137,25 @@
     .contenedor-cards {
         height: 75vh;
     }
+
+    .contenedor-planes {
+        width: 95%;
+
+        ul {
+            padding: 0 !important;
+            list-style: none;
+        }
+    }
 }
 
 @media (max-width: 400px) {
     .contenedor-cards {
         height: 90vh;
+    }
+}
+
+@media (max-height: 750px) {
+    .gradient-box--blog {
+        height: 80vh;
     }
 }

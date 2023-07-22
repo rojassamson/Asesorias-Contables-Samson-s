@@ -27,6 +27,9 @@ a {
   font-size: 1rem !important;
   font-weight: 300; }
 
+#formulario a {
+  color: black !important; }
+
 li {
   text-align: justify;
   margin: 10px 0; }
@@ -39,7 +42,7 @@ li {
 
 a {
   text-decoration: none;
-  color: white;
+  color: white !important;
   padding: 10px 10px;
   display: inline-block;
   border-radius: 50px;
@@ -57,10 +60,10 @@ a {
   border-radius: 10%;
   background: linear-gradient(45deg, rgba(0, 0, 0, 0) 0%, rgba(129, 111, 111, 0.69) 35%, rgba(0, 0, 0, 0) 65%, rgba(143, 123, 123, 0.694) 100%);
   animation: color-gradient-animation 2s infinite;
-  background-size: 400% 400%; }
+  background-size: 400% 400%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); }
   .gradient-box:hover {
     background: linear-gradient(45deg, rgba(125, 231, 78, 0.779582) 0%, rgba(9, 244, 190, 0.75174) 25%, rgba(78, 231, 177, 0.779582) 50%, rgba(9, 147, 244, 0.75174) 100%);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     animation: color-gradient-animation 2s ease-out infinite;
     background-size: 400% 400%;
     background-repeat: repeat; }
@@ -155,20 +158,27 @@ footer div p {
 footer a:hover {
   background: black; }
 
-span {
+header h1 span, main span {
   font-weight: 700;
   font-style: normal;
   border-bottom: 4px solid white; }
 
+.navbar-toggler {
+  background-color: white !important; }
+
 .padding-navbar {
   padding: 15px 0; }
+
+.navbar ul {
+  margin-left: 30% !important; }
 
 main {
   background: #020024;
   background: radial-gradient(circle, #020024 0%, rgba(44, 64, 63, 0.206497) 0%, rgba(44, 69, 67, 0.816705) 100%); }
 
 .divisor-contenido {
-  height: 15vh;
+  min-height: 15vh;
+  height: auto;
   background-color: black;
   color: white;
   display: flex;
@@ -182,14 +192,15 @@ main {
       font-size: 2.6rem !important; }
 
 #altura_main_planes {
-  height: 70.85vh;
+  height: auto;
+  min-height: 70.85vh;
   padding-top: 2vh !important; }
 
 .contenedor-planes {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 2rem;
-  margin-bottom: 2rem; }
+  padding-bottom: 2rem; }
   .contenedor-planes #boton-plan-basico, .contenedor-planes #boton-plan-medio {
     padding: 75px 0 0 0; }
   .contenedor-planes #boton-plan-full {
@@ -222,11 +233,41 @@ main {
     padding: 10px;
     border-radius: 2%; }
 
+@media (max-width: 1400px) {
+  #altura_main_planes {
+    height: auto;
+    padding-bottom: 5vh !important; }
+  .contenedor-planes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    width: 50%;
+    margin: 0 auto; } }
+  @media (max-width: 1400px) and (max-width: 991px) {
+    .contenedor-planes {
+      width: 85%; } }
+
+@media (max-width: 1400px) {
+    .contenedor-planes #boton-plan-basico, .contenedor-planes #boton-plan-medio {
+      padding: 25px 0 20px 0; }
+    .contenedor-planes .gradient-box {
+      border-radius: 5%; }
+      .contenedor-planes .gradient-box ul {
+        display: inline-block;
+        padding: 0 25%; } }
+
+@media (max-width: 1200px) {
+  .navbar ul {
+    margin-left: 15% !important; } }
+
 @media (max-width: 991px) {
+  .navbar ul {
+    margin-left: 0 !important; }
   .container {
     width: 90%; }
   .contenedor-cards {
-    height: 50vh; }
+    min-height: 50vh; }
     .contenedor-cards__front__img {
       display: flex;
       flex-direction: column;
@@ -239,6 +280,8 @@ main {
     height: auto; }
   #formulario {
     margin-top: -150px; }
+  #gap-fieldset {
+    padding-top: 20px; }
   .navbar-grid {
     display: grid !important;
     grid-template-columns: 1fr 1fr;
@@ -276,36 +319,21 @@ main {
   .padding-planes {
     padding: 20px 0; } }
 
-@media (max-width: 1400px) {
-  #altura_main_planes {
-    height: auto;
-    padding-bottom: 5vh !important; }
-  .contenedor-planes {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 30px;
-    width: 50%;
-    margin: 0 auto; } }
-  @media (max-width: 1400px) and (max-width: 991px) {
-    .contenedor-planes {
-      width: 85%; } }
-
-@media (max-width: 1400px) {
-    .contenedor-planes #boton-plan-basico, .contenedor-planes #boton-plan-medio {
-      padding: 25px 0 20px 0; }
-    .contenedor-planes .gradient-box {
-      border-radius: 5%; }
-      .contenedor-planes .gradient-box ul {
-        display: inline-block;
-        padding: 0 25%; } }
-
 @media (max-width: 630px) {
   #formulario {
     margin-top: 0; }
   .contenedor-cards {
-    height: 75vh; } }
+    height: 75vh; }
+  .contenedor-planes {
+    width: 95%; }
+    .contenedor-planes ul {
+      padding: 0 !important;
+      list-style: none; } }
 
 @media (max-width: 400px) {
   .contenedor-cards {
     height: 90vh; } }
+
+@media (max-height: 750px) {
+  .gradient-box--blog {
+    height: 80vh; } }

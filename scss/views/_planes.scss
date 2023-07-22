@@ -1,14 +1,14 @@
 #altura_main_planes {
-    height: 70.85vh;
+    height: auto;
+    min-height: 70.85vh;
     padding-top: 2vh !important;
-
 }
 
 .contenedor-planes {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem;
-    margin-bottom: 2rem;
+    padding-bottom: 2rem;
 
     #boton-plan-basico, #boton-plan-medio {
         padding: 75px 0 0 0;

@@ -7,6 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,700;1,100;1,300;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Contacto - Rojas Samson - Contador</title>
@@ -16,7 +19,7 @@
     <header class="py-4 bg-black">
       <nav class="navbar navbar-expand-lg">
         <div class="container h-100">
-            <a class="d-inline-block navbar-brand" href="../index.html"><h1 class="fst-italic">Rojas Samson <span>Contador</span></h1></a>
+            <a class="d-inline-block navbar-brand" href="../index.html"><h1 class="fst-italic">Asesorías Contables <span>Samson's</span></h1></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -34,50 +37,42 @@
 
     <main id="main-contacto">
         <div class="container">
-          <div class="row">
-            <div" class="col-12 text-center py-5">
-              <div>
-                <img id="imagen-contacto" src="../assets/img/imagen-contacto.webp" alt="Imagen choque de puños." class="img-fluid rounded">
-              </div>
-            </div>
-            <div id="formulario" class="py-3 col-12">
-              <form action="">
-                    <div class="row">
-
-                      <div class="col-12 col-lg">
-                        <fieldset class="col-12 col-lg">
-                          <legend>Datos personales</legend>
-                          <div id="centrar-fieldset">
-                            <div class="mb-3">
-                              <label for="nombre" class="form-label">Nombre:</label>
-                              <input type="text" class="form-control" id="nombre">
-                            </div>
-                            <div class="mb-3">
-                              <label for="correo" class="form-label">Correo:</label>
-                              <input type="email" class="form-control" id="correo">
-                            </div>
-                            <div class="mb-3">
-                              <label for="telefono" class="form-label">Teléfono:</label>
-                              <input type="number" class="form-control" id="telefono">
-                            </div>                            
+          <div id="centrar-formulario">
+            <form id="formulario" action="">
+                  <div class="row">
+                    <div class="col-12 col-lg">
+                      <fieldset class="col-12 col-lg">
+                        <legend>Datos personales</legend>
+                        <div id="centrar-fieldset">
+                          <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="nombre">
                           </div>
-                        </fieldset>
-                      </div>
-                      <div id="gap-fieldset" class="col-12 col-lg">
-                        <fieldset>
-                          <legend>Mensaje</legend>
-                          <p>Indíquenos información sobre su empresa y el servicio</p>
-                          <p>que desea consultar y lo contactaremos a la brevedad</p>
-                          <textarea name="mensaje" id="mensaje" class="form-control" cols="50" rows="9"></textarea>
-                        </fieldset>
-                      </div>
-
+                          <div class="mb-3">
+                            <label for="correo" class="form-label">Correo:</label>
+                            <input type="email" class="form-control" id="correo">
+                          </div>
+                          <div class="mb-3">
+                            <label for="telefono" class="form-label">Teléfono:</label>
+                            <input type="number" class="form-control" id="telefono">
+                          </div>                            
+                        </div>
+                      </fieldset>
                     </div>
-                <div class="text-center py-4">
-                  <a href="#" class="btn btn-light">ENVIAR FORMULARIO</a>
-                </div>
-              </form>
-            </div>
+                    <div id="gap-fieldset" class="col-12 col-lg">
+                      <fieldset>
+                        <legend>Mensaje</legend>
+                        <p>Indíquenos información sobre su empresa y el servicio</p>
+                        <p>que desea consultar y lo contactaremos a la brevedad</p>
+                        <textarea name="mensaje" id="mensaje" class="form-control" cols="50" rows="9"></textarea>
+                      </fieldset>
+                    </div>
+
+                  </div>
+              <div class="text-center py-4">
+                <a href="#" class="btn btn-light">ENVIAR FORMULARIO</a>
+              </div>
+            </form>
           </div>
         </div>
       </main>

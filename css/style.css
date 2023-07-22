@@ -153,31 +153,19 @@ a {
 .bg-black {
   box-shadow: 0px 5px 30px 20px rgba(0, 0, 0, 0.8) !important; }
 
-footer div p {
-  color: white; }
-
 .padding-footer {
   padding: 0 50%; }
 
-footer a:hover {
-  background: black; }
-
 footer {
   min-height: 15vh; }
+  footer div p {
+    color: white; }
+  footer a:hover {
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0) 0%, rgba(129, 111, 111, 0.69) 35%, rgba(0, 0, 0, 0) 65%, rgba(143, 123, 123, 0.694) 100%); }
 
-header h1 span, main span {
-  font-weight: 600;
-  font-style: normal;
-  font-size: 3rem; }
-
+header h1 span
 main span {
   border-bottom: 4px solid white; }
-
-header h1 span {
-  font-family: 'Tektur', cursive; }
-
-header a {
-  white-space: normal !important; }
 
 .navbar-toggler {
   background-color: white !important; }
@@ -190,10 +178,21 @@ header a {
 
 header {
   min-height: 15vh; }
+  header h1 span {
+    font-family: 'Tektur', cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3rem; }
+  header a {
+    white-space: normal !important; }
 
 main {
   background: #020024;
   background: radial-gradient(circle, #020024 0%, rgba(44, 64, 63, 0.206497) 0%, rgba(44, 69, 67, 0.816705) 100%); }
+  main span {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3rem; }
 
 .divisor-contenido {
   min-height: 15vh;
@@ -232,10 +231,12 @@ main {
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  background-position: center; }
+  #main-contacto .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 #centrar-fieldset {
   margin-top: 160px; }
@@ -247,7 +248,8 @@ main {
   border-radius: 2.5%;
   padding: 20px 20px;
   color: white;
-  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5); }
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+  height: 100%; }
   #formulario input, #formulario textarea {
     background: linear-gradient(45deg, rgba(0, 0, 0, 0) 0%, rgba(129, 111, 111, 0.69) 35%, rgba(0, 0, 0, 0) 65%, rgba(143, 123, 123, 0.694) 100%);
     color: white; }
@@ -303,17 +305,17 @@ main {
     .contenedor-cards img {
       max-width: 90% !important;
       height: 50%; }
+  #formulario {
+    width: 100%; }
   .divisor-contenido {
     height: auto; }
-  #formulario {
-    margin-top: -150px; }
   #gap-fieldset {
     padding-top: 20px; }
   .navbar-grid {
     display: grid !important;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: "blog sobre_mi" "planes contacto";
+    grid-template-areas: "blog sobre_mi" "planes contacto";
     padding: 30px 0 0 0 !important; }
     .navbar-grid li:nth-of-type(1) {
       grid-area: blog;
@@ -365,6 +367,16 @@ main {
   .contenedor-cards {
     height: 90vh; } }
 
+@media (max-height: 900px) {
+  #main-contacto {
+    height: 150vh; } }
+
 @media (max-height: 750px) {
   .gradient-box--blog {
-    height: 80vh; } }
+    height: 80vh; }
+  #main-contacto {
+    height: 220vh; } }
+
+@media (max-height: 460px) {
+  #main-contacto {
+    height: 270vh; } }

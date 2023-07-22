@@ -4,7 +4,8 @@ main {
 }
 
 .divisor-contenido {
-    height: 15vh;
+    min-height: 15vh;
+    height: auto;
     background-color: black;
     color: white;
     display: flex;

@@ -1,6 +1,12 @@
 main {
     background: rgb(2,0,36);
     background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(44,64,63,0.20649651972157768) 0%, rgba(44,69,67,0.8167053364269141) 100%);
+
+    span {
+        font-weight: 600;
+        font-style: normal;
+        font-size: 3rem;
+    }
 }
 
 .divisor-contenido {

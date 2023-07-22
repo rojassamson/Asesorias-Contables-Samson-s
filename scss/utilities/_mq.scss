@@ -60,12 +60,13 @@
         };
     }
 
+    #formulario {
+        width: 100%;
+    }
+    
+
     .divisor-contenido {
         height: auto;
-    }
-
-    #formulario {
-        margin-top: -150px;
     }
 
     #gap-fieldset {
@@ -160,8 +161,25 @@
     }
 }
 
+@media (max-height: 900px) {
+
+    #main-contacto {
+        height : 150vh;
+    }
+}
+
 @media (max-height: 750px) {
     .gradient-box--blog {
         height: 80vh;
+    }
+
+    #main-contacto {
+        height : 220vh;
+    }
+}
+
+@media (max-height: 460px) {
+    #main-contacto {
+        height: 270vh;
     }
 }

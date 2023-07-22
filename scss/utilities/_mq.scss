@@ -33,14 +33,14 @@
 
 @media (max-width: 1200px) {
     .navbar ul {
-        margin-left: 15% !important;
+        margin-left: 0 !important;
     }
 }
 
 @media (max-width: 991px) {
 
-    .navbar ul {
-        margin-left: 0 !important;
+    #main-contacto {
+        height: 140vh;
     }
     .container {
         width: 90%;
@@ -102,6 +102,12 @@
     } 
 
     header{
+        nav .container {
+            min-height: 20vh;
+            button {
+                margin-top: 50px;
+            }
+        }
         height: auto;
     }
 

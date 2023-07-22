@@ -1,7 +1,19 @@
 header h1 span, main span {
-    font-weight: 700;
+    font-weight: 600;
     font-style: normal;
+    font-size: 3rem;
+}
+
+main span {
     border-bottom: 4px solid white ;
+}
+
+header h1 span {
+    font-family: 'Tektur', cursive;
+}
+
+header a {
+    white-space: normal !important;
 }
 
 .navbar-toggler {
@@ -13,6 +25,10 @@ header h1 span, main span {
 }
 
 .navbar ul {
-    margin-left: 30% !important;
+    margin-left: 20% !important;
+}
+
+header {
+    min-height: 15vh;
 }
 

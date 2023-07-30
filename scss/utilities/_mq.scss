@@ -39,6 +39,14 @@
 
 @media (max-width: 991px) {
 
+    .contenedorImagen {
+        height: 80vh;
+    }
+
+    .contenedorTexto {
+        margin: 10px 0 !important;
+    }
+
     #main-contacto {
         height: 140vh;
     }

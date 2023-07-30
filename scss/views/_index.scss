@@ -1,0 +1,50 @@
+
+#imagenHombreTraje {
+    background-image: url("../assets/img/hombre_traje.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+
+#imagenImpuestos {
+    background-image: url("../assets/img/impuestos.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+
+
+.contenedorInfo {
+    min-height: 85vh;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+
+    h2 {
+        padding-left: 20px;
+    }
+
+    h3 {
+        border-bottom: 3px solid white;
+    }
+
+    .contenedorTexto {
+        background-color: rgb(53, 52, 52);
+        padding: 10px 20px;
+        color: white;
+        margin: 10px 0 10px -40px;
+
+    }
+
+    &:first-of-type {
+        .contenedorTexto {
+            margin-left: 0;
+            margin-right: -40px;
+        }
+    }
+
+}

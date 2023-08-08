@@ -20,7 +20,7 @@ a {
         background-color: rgba(129, 111, 111, 0.69);
         box-shadow: 0px 0px 10px rgba(129, 111, 111, 0.69);
         transform: scale(1.1);
-        color: white  !important;
+        color: black  !important;
         
     }
 }
@@ -71,7 +71,6 @@ a {
     height: 40vh;
     width: 100%;
     position: relative;
-    perspective: 500pxpx;
     margin: 30px 0;
 
     &__front, &__back {
@@ -92,7 +91,7 @@ a {
             height: 70%;
             padding-top: 20px;
             img {
-                height: 100%;
+                height: auto;
             }
         }
         &__heading {

@@ -64,7 +64,6 @@
         }
         img {
             max-width: 90% !important;
-            height: 50%;
         };
     }
 
@@ -169,6 +168,12 @@
     }
 }
 
+@media (max-width: 325px) {
+    .contenedor-cards {
+        height: 110vh;
+    }
+}
+
 @media (max-height: 900px) {
 
     #main-contacto {
@@ -190,4 +195,16 @@
     #main-contacto {
         height: 270vh;
     }
+}
+
+@media (max-height: 300px) {
+    .gradient-box--blog {
+        height: 100vh;
+    }
+    @media (max-width: 991px) {
+        .gradient-box--blog {
+            height: 150vh;
+        }
+    }
+
 }

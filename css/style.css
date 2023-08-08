@@ -32,7 +32,13 @@ a {
 
 li {
   text-align: justify;
-  margin: 10px 0; }
+  margin: 10px 0;
+  font-size: 1.2rem;
+  font-weight: 300; }
+
+img {
+  width: auto;
+  height: 100%; }
 
 .centrar-vertical {
   margin: auto 0; }
@@ -53,7 +59,7 @@ a {
     background-color: rgba(129, 111, 111, 0.69);
     box-shadow: 0px 0px 10px rgba(129, 111, 111, 0.69);
     transform: scale(1.1);
-    color: white  !important; }
+    color: black  !important; }
 
 .gradient-box {
   border-radius: 10%;
@@ -99,7 +105,6 @@ a {
   height: 40vh;
   width: 100%;
   position: relative;
-  perspective: 500pxpx;
   margin: 30px 0; }
   .contenedor-cards__front, .contenedor-cards__back {
     position: absolute;
@@ -117,7 +122,7 @@ a {
       height: 70%;
       padding-top: 20px; }
       .contenedor-cards__front__img img {
-        height: 100%; }
+        height: auto; }
     .contenedor-cards__front__heading {
       padding: 30px 0;
       width: 100%;
@@ -182,6 +187,8 @@ header {
     font-size: 3rem; }
   header a {
     white-space: normal !important; }
+    header a:hover {
+      color: white !important; }
 
 main {
   background: #020024;
@@ -209,7 +216,8 @@ main {
 #altura_main_planes {
   height: auto;
   min-height: 70.85vh;
-  padding-top: 2vh !important; }
+  padding-top: 5vh !important;
+  padding-bottom: 3vh; }
 
 .contenedor-planes {
   display: grid;
@@ -355,8 +363,7 @@ main {
       justify-content: center;
       align-items: center; }
     .contenedor-cards img {
-      max-width: 90% !important;
-      height: 50%; }
+      max-width: 90% !important; }
   #formulario {
     width: 100%; }
   .divisor-contenido {
@@ -419,6 +426,10 @@ main {
   .contenedor-cards {
     height: 90vh; } }
 
+@media (max-width: 325px) {
+  .contenedor-cards {
+    height: 110vh; } }
+
 @media (max-height: 900px) {
   #main-contacto {
     height: 150vh; } }
@@ -432,3 +443,11 @@ main {
 @media (max-height: 460px) {
   #main-contacto {
     height: 270vh; } }
+
+@media (max-height: 300px) {
+  .gradient-box--blog {
+    height: 100vh; } }
+
+@media (max-height: 300px) and (max-width: 991px) {
+  .gradient-box--blog {
+    height: 150vh; } }
